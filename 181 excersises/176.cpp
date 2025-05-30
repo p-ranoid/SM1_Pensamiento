@@ -5,7 +5,7 @@ int main() {
     int entero = 42;
     double decimal = 3.1416;
     char caracter = 'A';
-    string texto = "Probando la memoria";
+    string texto = "Probando direccion de memoria";
 
     cout << "Direcciones de memoria:\n";
     cout << "Entero (" << entero << "): " << &entero << endl;
