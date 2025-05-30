@@ -1,20 +1,21 @@
 #include <iostream>
+#include <string>
 using namespace std;
 
-int contarCaracteres(const char *chain) {
-    int counter = 0;
-    while (*chain != '\0') {
-        counter++;
-        chain++;
+int contarCaracteres(const char *cadena) {
+    int contador = 0;
+    while (*cadena != '\0') {
+        contador++;
+        cadena++;
     }
-    return counter;
+    return contador;
 }
 
 int main() {
-    char texto[100];
-    
-    cout << "Ingresa un texto de maximo 100 caracteres: ";
-    cin.getline(texto, 100);
+    string entrada;
+    cout << "Ingresa un texto: ";
+    getline(cin, entrada);
+    const char *texto = entrada.c_str();
     
     int longitud = contarCaracteres(texto);
     cout << "El texto tiene " << longitud << " caracteres." << endl;
