@@ -14,7 +14,7 @@ if __name__ == "__main__":
     entero = 42
     decimal = 3.1416
     caracter = 'A'
-    texto = "Probando memoria en Python"
+    texto = "Hola Mundo"
     lista = [1, 2, 3]
 
     mostrar_info(entero, "entero")
